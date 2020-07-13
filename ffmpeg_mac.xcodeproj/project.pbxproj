@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCBC8B4B24BCB86C00C0CBBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC8B4A24BCB86C00C0CBBA /* AppDelegate.swift */; };
+		FCBC8B4D24BCB86C00C0CBBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC8B4C24BCB86C00C0CBBA /* ViewController.swift */; };
+		FCBC8B4F24BCB86D00C0CBBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCBC8B4E24BCB86D00C0CBBA /* Assets.xcassets */; };
+		FCBC8B5224BCB86D00C0CBBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBC8B5024BCB86D00C0CBBA /* Main.storyboard */; };
+		FCBC8B5E24BCB86D00C0CBBA /* ffmpeg_macTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC8B5D24BCB86D00C0CBBA /* ffmpeg_macTests.swift */; };
+		FCBC8B6924BCB86D00C0CBBA /* ffmpeg_macUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC8B6824BCB86D00C0CBBA /* ffmpeg_macUITests.swift */; };
+		FCBC8B7A24BCBECE00C0CBBA /* libavdevice.58.10.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBC8B7724BCBECE00C0CBBA /* libavdevice.58.10.100.dylib */; };
+		FCBC8B7B24BCBECE00C0CBBA /* libavformat.58.45.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBC8B7824BCBECE00C0CBBA /* libavformat.58.45.100.dylib */; };
+		FCBC8B7C24BCBECE00C0CBBA /* libavutil.56.51.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBC8B7924BCBECE00C0CBBA /* libavutil.56.51.100.dylib */; };
+		FCBC8B8024BCBFA100C0CBBA /* ReadAudio.c in Sources */ = {isa = PBXBuildFile; fileRef = FCBC8B7F24BCBFA100C0CBBA /* ReadAudio.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCBC8B5A24BCB86D00C0CBBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCBC8B3F24BCB86C00C0CBBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCBC8B4624BCB86C00C0CBBA;
+			remoteInfo = ffmpeg_mac;
+		};
+		FCBC8B6524BCB86D00C0CBBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCBC8B3F24BCB86C00C0CBBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCBC8B4624BCB86C00C0CBBA;
+			remoteInfo = ffmpeg_mac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FCBC8B4724BCB86C00C0CBBA /* ffmpeg_mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ffmpeg_mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBC8B4A24BCB86C00C0CBBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCBC8B4C24BCB86C00C0CBBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCBC8B4E24BCB86D00C0CBBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCBC8B5124BCB86D00C0CBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCBC8B5324BCB86D00C0CBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCBC8B5424BCB86D00C0CBBA /* ffmpeg_mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ffmpeg_mac.entitlements; sourceTree = "<group>"; };
+		FCBC8B5924BCB86D00C0CBBA /* ffmpeg_macTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ffmpeg_macTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBC8B5D24BCB86D00C0CBBA /* ffmpeg_macTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ffmpeg_macTests.swift; sourceTree = "<group>"; };
+		FCBC8B5F24BCB86D00C0CBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCBC8B6424BCB86D00C0CBBA /* ffmpeg_macUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ffmpeg_macUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBC8B6824BCB86D00C0CBBA /* ffmpeg_macUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ffmpeg_macUITests.swift; sourceTree = "<group>"; };
+		FCBC8B6A24BCB86D00C0CBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCBC8B7724BCBECE00C0CBBA /* libavdevice.58.10.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavdevice.58.10.100.dylib; path = ../../../../../usr/local/Cellar/ffmpeg/4.3_3/lib/libavdevice.58.10.100.dylib; sourceTree = "<group>"; };
+		FCBC8B7824BCBECE00C0CBBA /* libavformat.58.45.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.58.45.100.dylib; path = ../../../../../usr/local/Cellar/ffmpeg/4.3_3/lib/libavformat.58.45.100.dylib; sourceTree = "<group>"; };
+		FCBC8B7924BCBECE00C0CBBA /* libavutil.56.51.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.56.51.100.dylib; path = ../../../../../usr/local/Cellar/ffmpeg/4.3_3/lib/libavutil.56.51.100.dylib; sourceTree = "<group>"; };
+		FCBC8B7D24BCBFA000C0CBBA /* ffmpeg_mac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ffmpeg_mac-Bridging-Header.h"; sourceTree = "<group>"; };
+		FCBC8B7E24BCBFA100C0CBBA /* ReadAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadAudio.h; sourceTree = "<group>"; };
+		FCBC8B7F24BCBFA100C0CBBA /* ReadAudio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ReadAudio.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCBC8B4424BCB86C00C0CBBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBC8B7A24BCBECE00C0CBBA /* libavdevice.58.10.100.dylib in Frameworks */,
+				FCBC8B7B24BCBECE00C0CBBA /* libavformat.58.45.100.dylib in Frameworks */,
+				FCBC8B7C24BCBECE00C0CBBA /* libavutil.56.51.100.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBC8B5624BCB86D00C0CBBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBC8B6124BCB86D00C0CBBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCBC8B3E24BCB86C00C0CBBA = {
+			isa = PBXGroup;
+			children = (
+				FCBC8B4924BCB86C00C0CBBA /* ffmpeg_mac */,
+				FCBC8B5C24BCB86D00C0CBBA /* ffmpeg_macTests */,
+				FCBC8B6724BCB86D00C0CBBA /* ffmpeg_macUITests */,
+				FCBC8B4824BCB86C00C0CBBA /* Products */,
+				FCBC8B7624BCBECE00C0CBBA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FCBC8B4824BCB86C00C0CBBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCBC8B4724BCB86C00C0CBBA /* ffmpeg_mac.app */,
+				FCBC8B5924BCB86D00C0CBBA /* ffmpeg_macTests.xctest */,
+				FCBC8B6424BCB86D00C0CBBA /* ffmpeg_macUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCBC8B4924BCB86C00C0CBBA /* ffmpeg_mac */ = {
+			isa = PBXGroup;
+			children = (
+				FCBC8B4A24BCB86C00C0CBBA /* AppDelegate.swift */,
+				FCBC8B4C24BCB86C00C0CBBA /* ViewController.swift */,
+				FCBC8B7E24BCBFA100C0CBBA /* ReadAudio.h */,
+				FCBC8B7F24BCBFA100C0CBBA /* ReadAudio.c */,
+				FCBC8B4E24BCB86D00C0CBBA /* Assets.xcassets */,
+				FCBC8B5024BCB86D00C0CBBA /* Main.storyboard */,
+				FCBC8B5324BCB86D00C0CBBA /* Info.plist */,
+				FCBC8B5424BCB86D00C0CBBA /* ffmpeg_mac.entitlements */,
+				FCBC8B7D24BCBFA000C0CBBA /* ffmpeg_mac-Bridging-Header.h */,
+			);
+			path = ffmpeg_mac;
+			sourceTree = "<group>";
+		};
+		FCBC8B5C24BCB86D00C0CBBA /* ffmpeg_macTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCBC8B5D24BCB86D00C0CBBA /* ffmpeg_macTests.swift */,
+				FCBC8B5F24BCB86D00C0CBBA /* Info.plist */,
+			);
+			path = ffmpeg_macTests;
+			sourceTree = "<group>";
+		};
+		FCBC8B6724BCB86D00C0CBBA /* ffmpeg_macUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FCBC8B6824BCB86D00C0CBBA /* ffmpeg_macUITests.swift */,
+				FCBC8B6A24BCB86D00C0CBBA /* Info.plist */,
+			);
+			path = ffmpeg_macUITests;
+			sourceTree = "<group>";
+		};
+		FCBC8B7624BCBECE00C0CBBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCBC8B7724BCBECE00C0CBBA /* libavdevice.58.10.100.dylib */,
+				FCBC8B7824BCBECE00C0CBBA /* libavformat.58.45.100.dylib */,
+				FCBC8B7924BCBECE00C0CBBA /* libavutil.56.51.100.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCBC8B4624BCB86C00C0CBBA /* ffmpeg_mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCBC8B6D24BCB86D00C0CBBA /* Build configuration list for PBXNativeTarget "ffmpeg_mac" */;
+			buildPhases = (
+				FCBC8B4324BCB86C00C0CBBA /* Sources */,
+				FCBC8B4424BCB86C00C0CBBA /* Frameworks */,
+				FCBC8B4524BCB86C00C0CBBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ffmpeg_mac;
+			productName = ffmpeg_mac;
+			productReference = FCBC8B4724BCB86C00C0CBBA /* ffmpeg_mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCBC8B5824BCB86D00C0CBBA /* ffmpeg_macTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCBC8B7024BCB86D00C0CBBA /* Build configuration list for PBXNativeTarget "ffmpeg_macTests" */;
+			buildPhases = (
+				FCBC8B5524BCB86D00C0CBBA /* Sources */,
+				FCBC8B5624BCB86D00C0CBBA /* Frameworks */,
+				FCBC8B5724BCB86D00C0CBBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCBC8B5B24BCB86D00C0CBBA /* PBXTargetDependency */,
+			);
+			name = ffmpeg_macTests;
+			productName = ffmpeg_macTests;
+			productReference = FCBC8B5924BCB86D00C0CBBA /* ffmpeg_macTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCBC8B6324BCB86D00C0CBBA /* ffmpeg_macUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCBC8B7324BCB86D00C0CBBA /* Build configuration list for PBXNativeTarget "ffmpeg_macUITests" */;
+			buildPhases = (
+				FCBC8B6024BCB86D00C0CBBA /* Sources */,
+				FCBC8B6124BCB86D00C0CBBA /* Frameworks */,
+				FCBC8B6224BCB86D00C0CBBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCBC8B6624BCB86D00C0CBBA /* PBXTargetDependency */,
+			);
+			name = ffmpeg_macUITests;
+			productName = ffmpeg_macUITests;
+			productReference = FCBC8B6424BCB86D00C0CBBA /* ffmpeg_macUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCBC8B3F24BCB86C00C0CBBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = konglee;
+				TargetAttributes = {
+					FCBC8B4624BCB86C00C0CBBA = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+					FCBC8B5824BCB86D00C0CBBA = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = FCBC8B4624BCB86C00C0CBBA;
+					};
+					FCBC8B6324BCB86D00C0CBBA = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = FCBC8B4624BCB86C00C0CBBA;
+					};
+				};
+			};
+			buildConfigurationList = FCBC8B4224BCB86C00C0CBBA /* Build configuration list for PBXProject "ffmpeg_mac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCBC8B3E24BCB86C00C0CBBA;
+			productRefGroup = FCBC8B4824BCB86C00C0CBBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCBC8B4624BCB86C00C0CBBA /* ffmpeg_mac */,
+				FCBC8B5824BCB86D00C0CBBA /* ffmpeg_macTests */,
+				FCBC8B6324BCB86D00C0CBBA /* ffmpeg_macUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCBC8B4524BCB86C00C0CBBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBC8B4F24BCB86D00C0CBBA /* Assets.xcassets in Resources */,
+				FCBC8B5224BCB86D00C0CBBA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBC8B5724BCB86D00C0CBBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBC8B6224BCB86D00C0CBBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCBC8B4324BCB86C00C0CBBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBC8B4D24BCB86C00C0CBBA /* ViewController.swift in Sources */,
+				FCBC8B4B24BCB86C00C0CBBA /* AppDelegate.swift in Sources */,
+				FCBC8B8024BCBFA100C0CBBA /* ReadAudio.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBC8B5524BCB86D00C0CBBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBC8B5E24BCB86D00C0CBBA /* ffmpeg_macTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBC8B6024BCB86D00C0CBBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBC8B6924BCB86D00C0CBBA /* ffmpeg_macUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCBC8B5B24BCB86D00C0CBBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCBC8B4624BCB86C00C0CBBA /* ffmpeg_mac */;
+			targetProxy = FCBC8B5A24BCB86D00C0CBBA /* PBXContainerItemProxy */;
+		};
+		FCBC8B6624BCB86D00C0CBBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCBC8B4624BCB86C00C0CBBA /* ffmpeg_mac */;
+			targetProxy = FCBC8B6524BCB86D00C0CBBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCBC8B5024BCB86D00C0CBBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCBC8B5124BCB86D00C0CBBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCBC8B6B24BCB86D00C0CBBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCBC8B6C24BCB86D00C0CBBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FCBC8B6E24BCB86D00C0CBBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ffmpeg_mac/ffmpeg_mac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ML9NWM8SSX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ffmpeg_mac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/ffmpeg/4.3_3/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kong.ffmpeg-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ffmpeg_mac/ffmpeg_mac-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = /usr/local/Cellar/ffmpeg/4.3_3/include/;
+			};
+			name = Debug;
+		};
+		FCBC8B6F24BCB86D00C0CBBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ffmpeg_mac/ffmpeg_mac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ML9NWM8SSX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ffmpeg_mac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/ffmpeg/4.3_3/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kong.ffmpeg-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ffmpeg_mac/ffmpeg_mac-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = /usr/local/Cellar/ffmpeg/4.3_3/include/;
+			};
+			name = Release;
+		};
+		FCBC8B7124BCB86D00C0CBBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ML9NWM8SSX;
+				INFOPLIST_FILE = ffmpeg_macTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kong.ffmpeg-macTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ffmpeg_mac.app/Contents/MacOS/ffmpeg_mac";
+			};
+			name = Debug;
+		};
+		FCBC8B7224BCB86D00C0CBBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ML9NWM8SSX;
+				INFOPLIST_FILE = ffmpeg_macTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kong.ffmpeg-macTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ffmpeg_mac.app/Contents/MacOS/ffmpeg_mac";
+			};
+			name = Release;
+		};
+		FCBC8B7424BCB86D00C0CBBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ML9NWM8SSX;
+				INFOPLIST_FILE = ffmpeg_macUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kong.ffmpeg-macUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ffmpeg_mac;
+			};
+			name = Debug;
+		};
+		FCBC8B7524BCB86D00C0CBBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ML9NWM8SSX;
+				INFOPLIST_FILE = ffmpeg_macUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kong.ffmpeg-macUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ffmpeg_mac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCBC8B4224BCB86C00C0CBBA /* Build configuration list for PBXProject "ffmpeg_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBC8B6B24BCB86D00C0CBBA /* Debug */,
+				FCBC8B6C24BCB86D00C0CBBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCBC8B6D24BCB86D00C0CBBA /* Build configuration list for PBXNativeTarget "ffmpeg_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBC8B6E24BCB86D00C0CBBA /* Debug */,
+				FCBC8B6F24BCB86D00C0CBBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCBC8B7024BCB86D00C0CBBA /* Build configuration list for PBXNativeTarget "ffmpeg_macTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBC8B7124BCB86D00C0CBBA /* Debug */,
+				FCBC8B7224BCB86D00C0CBBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCBC8B7324BCB86D00C0CBBA /* Build configuration list for PBXNativeTarget "ffmpeg_macUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBC8B7424BCB86D00C0CBBA /* Debug */,
+				FCBC8B7524BCB86D00C0CBBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCBC8B3F24BCB86C00C0CBBA /* Project object */;
+}
